@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semana4_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOs-Cc-9Kw">
+                                <rect key="frame" x="20" y="119" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar por titulo"/>
+                                <connections>
+                                    <action selector="OnTapBuscarTitulo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Re-r6-f7S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVE-dy-oJp">
+                                <rect key="frame" x="20" y="174" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar por autor"/>
+                                <connections>
+                                    <action selector="OnTapBuscarAutor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxm-aZ-NFK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4i-Ic-MkW">
+                                <rect key="frame" x="20" y="229" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar por genero"/>
+                                <connections>
+                                    <action selector="OnTapBuscarGenero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNV-97-wBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8D-AF-kDO">
+                                <rect key="frame" x="20" y="365" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Prestar Libro"/>
+                                <connections>
+                                    <action selector="OnTapBuscarGenero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6MO-gZ-Z5E"/>
+                                    <action selector="onTapPrestar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dOb-x1-R4v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fz-Zf-8iN">
+                                <rect key="frame" x="20" y="420" width="374" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Devolver Libro"/>
+                                <connections>
+                                    <action selector="OnTapBuscarGenero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="biy-Ua-P3f"/>
+                                    <action selector="onTapDevolver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEV-Ah-wRn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busquedas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouq-PK-ZGO">
+                                <rect key="frame" x="20" y="78" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acciones:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM7-DQ-iFj">
+                                <rect key="frame" x="20" y="324" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ouq-PK-ZGO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6n6-P8-fjV"/>
+                            <constraint firstItem="X8D-AF-kDO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7YG-e9-l0W"/>
+                            <constraint firstItem="I4i-Ic-MkW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Dyh-fk-b3h"/>
+                            <constraint firstItem="cOs-Cc-9Kw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GCd-dl-e4n"/>
+                            <constraint firstItem="cOs-Cc-9Kw" firstAttribute="top" secondItem="Ouq-PK-ZGO" secondAttribute="bottom" constant="20" id="GUK-gD-qMh"/>
+                            <constraint firstItem="3fz-Zf-8iN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JkN-17-GMO"/>
+                            <constraint firstItem="AM7-DQ-iFj" firstAttribute="top" secondItem="I4i-Ic-MkW" secondAttribute="bottom" constant="60" id="PrR-NG-4e6"/>
+                            <constraint firstItem="Ouq-PK-ZGO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="SZ4-Cz-xG8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nVE-dy-oJp" secondAttribute="trailing" constant="20" id="XWQ-06-IhV"/>
+                            <constraint firstItem="X8D-AF-kDO" firstAttribute="top" secondItem="AM7-DQ-iFj" secondAttribute="bottom" constant="20" id="XeC-aL-pMU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3fz-Zf-8iN" secondAttribute="trailing" constant="20" id="YGT-ot-QKm"/>
+                            <constraint firstItem="nVE-dy-oJp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bRg-NM-jH6"/>
+                            <constraint firstItem="I4i-Ic-MkW" firstAttribute="top" secondItem="nVE-dy-oJp" secondAttribute="bottom" constant="20" id="ee0-4H-Fyj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X8D-AF-kDO" secondAttribute="trailing" constant="20" id="ey4-UJ-zUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ouq-PK-ZGO" secondAttribute="trailing" constant="283" id="geM-Z2-561"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOs-Cc-9Kw" secondAttribute="trailing" constant="20" id="iY6-Vj-EMA"/>
+                            <constraint firstItem="AM7-DQ-iFj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jbv-RP-odR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AM7-DQ-iFj" secondAttribute="trailing" constant="299" id="jje-x5-X6a"/>
+                            <constraint firstItem="nVE-dy-oJp" firstAttribute="top" secondItem="cOs-Cc-9Kw" secondAttribute="bottom" constant="20" id="jyC-BD-Yrh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I4i-Ic-MkW" secondAttribute="trailing" constant="20" id="qKQ-Pt-3tB"/>
+                            <constraint firstItem="3fz-Zf-8iN" firstAttribute="top" secondItem="X8D-AF-kDO" secondAttribute="bottom" constant="20" id="wdE-vW-rhh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BuscarAutor" destination="nVE-dy-oJp" id="Mwq-Nx-Zgy"/>
+                        <outlet property="BuscarGenero" destination="I4i-Ic-MkW" id="5ne-TW-VJl"/>
+                        <outlet property="BuscarTitulo" destination="cOs-Cc-9Kw" id="xtW-MF-bzu"/>
+                        <outlet property="brnBuscarTitulo" destination="cOs-Cc-9Kw" id="XWX-Ek-FnB"/>
+                        <outlet property="btnBuscarAutor" destination="nVE-dy-oJp" id="jc7-d3-fAt"/>
+                        <outlet property="btnBuscarGenero" destination="I4i-Ic-MkW" id="Egh-pX-m0l"/>
+                        <outlet property="btnDevolverLibro" destination="3fz-Zf-8iN" id="h3T-nz-RI4"/>
+                        <outlet property="btnPrestarLibro" destination="X8D-AF-kDO" id="hNJ-8V-HC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
